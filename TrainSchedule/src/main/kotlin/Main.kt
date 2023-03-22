@@ -7,7 +7,7 @@ class Train (
     val finalStation: String,
     val intermediateStations: MutableList<String>
 ) {
-    // Переопределение метода equals для сравнения объектов типа Train по значениям
+    // Переопределение метода equals для сравнения объектов типа Train на основе их свойств
     override fun equals(other: Any?): Boolean {
         return (other is Train)
                 && name == other.name
